@@ -1,4 +1,4 @@
-# Derivative Visualizer Web App
+# Calculus Visualizer Web App
 
 This is a modern web-based version of the source code for applets provided by David J. Eck as seen at the end of this file, built using HTML5 Canvas and Math.js.
 
@@ -24,18 +24,15 @@ Simply open the `index.html` file in any modern web browser.
 
 You can edit `script.js` to change default ranges (`X_MIN`, `X_MAX`, etc.) or add more features.
 
+  This source code file, and compiled classes derived from it, can      
+  be used and distributed without restriction, including for commercial  use.  (Attribution is not required but is appreciated.)               
+  sourse:https://www.nku.edu/~longa/classes/2010spring/mat129/days/applets/javamath/source/
+                                                                      
+  David J. Eck                                                         
+  Department of Mathematics and Computer Science                       
+  Hobart and William Smith Colleges                         
 
-sourse:https://www.nku.edu/~longa/classes/2010spring/mat129/days/applets/javamath/source/
-/*************************************************************************
-*                                                                        *
-*  This source code file, and compiled classes derived from it, can      *
-*  be used and distributed without restriction, including for commercial *
-*  use.  (Attribution is not required but is appreciated.)               * 
-*                                                                        *
-*   David J. Eck                                                         *
-*   Department of Mathematics and Computer Science                       *
-*   Hobart and William Smith Colleges                                    *
-*   Geneva, New York 14456,   USA                                        *
-*   Email: eck@hws.edu          WWW: http://math.hws.edu/eck/            *
-*                                                                        *
-*************************************************************************/
+
+       
+  Email: eck@hws.edu          WWW: http://math.hws.edu/eck/            
+                                                                        

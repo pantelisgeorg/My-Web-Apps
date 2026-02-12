@@ -1,6 +1,9 @@
 # Calculus Visualizer Web App
 
-This is a modern web-based version of the source code for applets provided by David J. Eck as seen at the end of this file, built using HTML5 Canvas and Math.js.
+This is a modern web-based version of an old source code for applets ( by David J. Eck as seen at the end of this file) that I found searching the internet.
+The applet source code can still be run with Java jdk's 8-17.
+We built the web-based version using HTML5 Canvas and Math.js together
+with Cline AI editor using DeepSeek and Gemini 3 preview LLMS.
 
 ## How to Run
 
@@ -22,17 +25,15 @@ Simply open the `index.html` file in any modern web browser.
 
 ## Customization
 
-You can edit `script.js` to change default ranges (`X_MIN`, `X_MAX`, etc.) or add more features.
+You can edit js files to change default ranges (`X_MIN`, `X_MAX`, etc.) or add more features.
 
-  This source code file, and compiled classes derived from it, can      
-  be used and distributed without restriction, including for commercial  use.  (Attribution is not required but is appreciated.)               
+  
+  This source code file can      
+  be used and distributed without restriction, including for commercial  use.              
   sourse:https://www.nku.edu/~longa/classes/2010spring/mat129/days/applets/javamath/source/
-                                                                      
+  (Attribution is not required but is appreciated.)                                                                    
   David J. Eck                                                         
   Department of Mathematics and Computer Science                       
   Hobart and William Smith Colleges                         
-
-
-       
   Email: eck@hws.edu          WWW: http://math.hws.edu/eck/            
                                                                         

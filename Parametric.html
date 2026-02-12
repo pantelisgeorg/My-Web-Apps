@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametric Curves</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Parametric Curves Visualizer</h1>
+            <p>Plot curves defined by parametric equations.</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="input-group">
+                <label for="x-input">x(t) =</label>
+                <input type="text" id="x-input" value="sin(3*t)" placeholder="e.g. sin(3*t)">
+            </div>
+            <div class="input-group">
+                <label for="y-input">y(t) =</label>
+                <input type="text" id="y-input" value="cos(5*t)" placeholder="e.g. cos(5*t)">
+            </div>
+            <div class="input-group">
+                <label>t range: [</label>
+                <input type="text" id="t-min" value="0" style="width: 60px" placeholder="0">
+                <label>,</label>
+                <input type="text" id="t-max" value="2*pi" style="width: 60px" placeholder="2*pi">
+                <label>]</label>
+            </div>
+            <button id="plot-btn">Plot</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graph-canvas" width="800" height="600"></canvas>
+            <div id="error-message" style="color: red; position: absolute; bottom: 10px; left: 10px; background: rgba(255,255,255,0.8); padding: 5px; display: none;"></div>
+        </div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/Parametric.js"></script>
+</body>
+</html>

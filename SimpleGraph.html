@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Graph</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Simple Graph Visualizer</h1>
+            <p>Basic function plotting tool.</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="input-group">
+                <label for="function-input">f(x) =</label>
+                <input type="text" id="function-input" value="x^3 - x" placeholder="Enter function">
+                <button id="plot-btn">Plot</button>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graph-canvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/SimpleGraph.js"></script>
+</body>
+</html>

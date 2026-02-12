@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Evaluator Visualizer</h1>
+            <p>Evaluate mathematical variables and expressions.</p>
+        </header>
+
+        <div class="controls-panel" style="flex-direction: column; align-items: stretch;">
+            <h3>Variables</h3>
+            <div class="input-group">
+                <label>x = </label>
+                <input type="text" id="var-x" value="2">
+            </div>
+            <div class="input-group">
+                <label>y = </label>
+                <input type="text" id="var-y" value="3">
+            </div>
+            
+            <h3>Expressions</h3>
+            <div class="input-group">
+                <label>f = </label>
+                <input type="text" id="expr-1" value="x^2 + y^2">
+                <span> = </span>
+                <span id="res-1" style="font-weight: bold; color: blue;">...</span>
+            </div>
+            <div class="input-group">
+                <label>g = </label>
+                <input type="text" id="expr-2" value="sin(x) * cos(y)">
+                <span> = </span>
+                <span id="res-2" style="font-weight: bold; color: blue;">...</span>
+            </div>
+            
+            <button id="calc-btn" style="margin-top: 10px;">Calculate</button>
+        </div>
+        <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
+    </div>
+    <script src="js/Evaluator.js"></script>
+</body>
+</html>

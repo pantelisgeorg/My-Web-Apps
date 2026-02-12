@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivative Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Derivative Visualizer</h1>
+            <p>Explore functions and their derivatives interactively</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="input-group">
+                <label for="function-input">f(x) =</label>
+                <input type="text" id="function-input" value="x^3 - 2*x + 1" placeholder="Enter a function like x^2">
+                <button id="plot-btn">Plot</button>
+            </div>
+            
+            <div class="examples-group">
+                <label for="examples">Examples:</label>
+                <select id="examples">
+                    <option value="x^3 - 2*x + 1">Cubic: x^3 - 2x + 1</option>
+                    <option value="sin(x)">Sine: sin(x)</option>
+                    <option value="cos(x)">Cosine: cos(x)</option>
+                    <option value="exp(x)">Exponential: e^x</option>
+                    <option value="log(x)">Logarithm: ln(x)</option>
+                    <option value="1/x">Rational: 1/x</option>
+                    <option value="x^2">Parabola: x^2</option>
+                </select>
+            </div>
+
+            <div class="toggles">
+                <label><input type="checkbox" id="show-derivative" checked> Show f'(x)</label>
+                <label><input type="checkbox" id="show-second-derivative"> Show f''(x)</label>
+                <label><input type="checkbox" id="show-tangent" checked> Show Tangent Line</label>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graph-canvas" width="800" height="600"></canvas>
+            
+            <div class="info-overlay">
+                <div class="info-item" id="fx-display">f(x) = ...</div>
+                <div class="info-item" id="dfx-display">f'(x) = ...</div>
+                <div class="info-item" id="tangent-display">Tangent: y = ...</div>
+            </div>
+        </div>
+
+        <div class="interactive-controls">
+            <div class="slider-container">
+                <label for="x-slider">x = <span id="x-value">0.00</span></label>
+                <input type="range" id="x-slider" min="-5" max="5" step="0.01" value="0">
+            </div>
+            
+            <div class="derivative-values">
+                <div>f(x) = <span id="val-f">0.00</span></div>
+                <div>f'(x) = <span id="val-df">0.00</span> (Slope)</div>
+            </div>
+        </div>
+
+        <div class="help-text">
+            <h3>How to use:</h3>
+            <ul>
+                <li>Enter a mathematical function in the input box (e.g., sin(x), x^2, etc.)</li>
+                <li>Drag the slider to move the point x along the curve</li>
+                <li>Observe the red tangent line - its slope is the value of the derivative at that point</li>
+                <li>The blue curve is the function f(x), the red dashed curve is the derivative f'(x)</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/Derivatives.js"></script>
+</body>
+</html>

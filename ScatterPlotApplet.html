@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatter Plot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Scatter Plot Visualizer</h1>
+            <p>Analyze data points with linear regression.</p>
+        </header>
+
+        <div class="controls-panel">
+            <div style="width: 100%;">
+                <label for="data-input">Data Points (x,y per line):</label><br>
+                <textarea id="data-input" rows="5" style="width: 100%; font-family: monospace;">1, 2
+2, 3.5
+3, 4
+4, 5.5
+5, 7</textarea>
+            </div>
+            <div class="toggles">
+                <label><input type="checkbox" id="show-reg" checked> Regression Line</label>
+            </div>
+            <button id="plot-btn">Update</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graph-canvas" width="800" height="600"></canvas>
+            <div id="stats-overlay" class="info-overlay" style="top: auto; bottom: 10px;">
+                Regression: y = mx + b
+            </div>
+        </div>
+        <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/ScatterPlotApplet.js"></script>
+</body>
+</html>

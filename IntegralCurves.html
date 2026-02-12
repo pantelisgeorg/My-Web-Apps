@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Integral Curves</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Integral Curves Visualizer</h1>
+            <p>Visualize slope fields and solution curves.</p>
+        </header>
+        <div class="controls-panel">
+            <div class="input-group"><label>dy/dx = </label><input type="text" id="function-input" value="sin(x)*cos(y)"></div>
+            <button id="plot-btn">Update</button>
+        </div>
+        <div class="canvas-container"><canvas id="graph-canvas" width="800" height="600"></canvas></div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/IntegralCurves.js"></script>
+</body>
+</html>

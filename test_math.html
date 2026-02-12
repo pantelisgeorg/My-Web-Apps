@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        const out = document.getElementById('output');
+        function test(expr) {
+            try {
+                const node = math.parse(expr);
+                const code = node.compile();
+                const res = code.evaluate({x: 2, k: 3, t: 4});
+                out.innerHTML += `<div>${expr} = ${res}</div>`;
+            } catch (e) {
+                out.innerHTML += `<div style="color:red">${expr} Error: ${e.message}</div>`;
+            }
+        }
+        
+        test("2x");
+        test("2*x");
+        test("sin(x)");
+        test("sin(kx)");
+        test("sin(k x)");
+        test("x y"); // implicit?
+    </script>
+</body>
+</html>

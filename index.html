@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Applets Collection</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        .app-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .app-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; transition: transform 0.2s; background: #fff; }
+        .app-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #007bff; }
+        .app-card h3 { margin-top: 0; color: #007bff; }
+        .app-card a { text-decoration: none; color: inherit; display: block; height: 100%; }
+        .tag { background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; color: #555; }
+        .container { background-color: #f9f9f9; padding: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Applets Collection</h1>
+        <p>A collection of interactive mathematical visualizations, ported from Java applets to modern Web standards (HTML5/Canvas).</p>
+        
+        <div class="app-list">
+            <div class="app-card"><a href="Derivatives.html"><h3>Derivatives</h3><p>Explore functions and their derivatives with tangent lines.</p><span class="tag">Calculus</span></a></div>
+            <div class="app-card"><a href="SimpleGraph.html"><h3>Simple Graph</h3><p>Basic function plotter.</p><span class="tag">Graphing</span></a></div>
+            <div class="app-card"><a href="MultiGraph.html"><h3>Multi Graph</h3><p>Plot multiple functions simultaneously.</p><span class="tag">Graphing</span></a></div>
+            <div class="app-card"><a href="FamiliesOfGraphs.html"><h3>Families of Graphs</h3><p>Explore function families with a parameter slider.</p><span class="tag">Graphing</span></a></div>
+            <div class="app-card"><a href="AnimatedGraph.html"><h3>Animated Graph</h3><p>Automatically animated function parameters.</p><span class="tag">Animation</span></a></div>
+            <div class="app-card"><a href="SecantTangent.html"><h3>Secant & Tangent</h3><p>Visualize the limit definition of the derivative.</p><span class="tag">Calculus</span></a></div>
+            <div class="app-card"><a href="FunctionComposition.html"><h3>Function Composition</h3><p>Visualize f(g(x)).</p><span class="tag">Functions</span></a></div>
+            <div class="app-card"><a href="Evaluator.html"><h3>Evaluator</h3><p>Evaluate mathematical expressions.</p><span class="tag">Tools</span></a></div>
+            <div class="app-card"><a href="Parametric.html"><h3>Parametric Curves</h3><p>Plot curves defined by x(t) and y(t).</p><span class="tag">Parametric</span></a></div>
+            <div class="app-card"><a href="RiemannSums.html"><h3>Riemann Sums</h3><p>Visualize integration via rectangle approximation.</p><span class="tag">Calculus</span></a></div>
+            <div class="app-card"><a href="IntegralCurves.html"><h3>Integral Curves</h3><p>Vector fields and direction fields.</p><span class="tag">Diff Eq</span></a></div>
+            <div class="app-card"><a href="ScatterPlotApplet.html"><h3>Scatter Plot</h3><p>Plot data points and regression lines.</p><span class="tag">Statistics</span></a></div>
+            <div class="app-card"><a href="EpsilonDelta.html"><h3>Epsilon Delta</h3><p>Visualize the formal definition of a limit.</p><span class="tag">Calculus</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

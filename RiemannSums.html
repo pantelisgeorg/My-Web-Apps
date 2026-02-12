@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riemann Sums</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Riemann Sums Visualizer</h1>
+            <p>Visualize integration via rectangle approximation.</p>
+        </header>
+        <div class="controls-panel">
+            <div class="input-group"><label>f(x)=</label><input type="text" id="function-input" value="x^2"></div>
+            <button id="plot-btn">Update</button>
+        </div>
+        <div class="canvas-container"><canvas id="graph-canvas" width="800" height="600"></canvas></div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/RiemannSums.js"></script>
+</body>
+</html>

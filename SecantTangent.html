@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secant and Tangent</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Secant and Tangent Visualizer</h1>
+            <p>Visualize the definition of the derivative.</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="input-group">
+                <label for="function-input">f(x) =</label>
+                <input type="text" id="function-input" value="x^2" placeholder="Enter function">
+            </div>
+            <div class="input-group">
+                <label for="x-slider">Point x = <span id="x-value">1.0</span></label>
+                <input type="range" id="x-slider" min="-3" max="3" step="0.1" value="1">
+            </div>
+            <div class="input-group">
+                <label for="h-slider">Secant h = <span id="h-value">1.0</span></label>
+                <input type="range" id="h-slider" min="-2" max="2" step="0.1" value="1">
+            </div>
+            <button id="plot-btn">Update</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graph-canvas" width="800" height="600"></canvas>
+            <div class="info-overlay">
+                <div class="info-item" id="secant-slope">Secant Slope: ...</div>
+                <div class="info-item" id="tangent-slope">Tangent Slope: ...</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/SecantTangent.js"></script>
+</body>
+</html>

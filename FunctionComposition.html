@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Composition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"><a href="index.html">&larr; Back to Menu</a></div>
+        <header>
+            <h1>Function Composition Visualizer</h1>
+            <p>Visualize the composition of two functions.</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="input-group">
+                <label for="f-input">f(x) =</label>
+                <input type="text" id="f-input" value="x^2" placeholder="f(x)">
+            </div>
+            <div class="input-group">
+                <label for="g-input">g(x) =</label>
+                <input type="text" id="g-input" value="sin(x)" placeholder="g(x)">
+            </div>
+            <div class="toggles">
+                <label><input type="checkbox" id="show-f" checked> f(x) (Blue)</label>
+                <label><input type="checkbox" id="show-g" checked> g(x) (Red)</label>
+                <label><input type="checkbox" id="show-fg" checked> f(g(x)) (Purple)</label>
+            </div>
+            <button id="plot-btn">Update</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graph-canvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="js/app-lib.js"></script>
+    <script src="js/FunctionComposition.js"></script>
+</body>
+</html>
